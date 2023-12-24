@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --pale-violent: hsl(276, 100%, 81%);
+    --moderate-violent: hsl(276, 55%, 52%);
+    --desaturated-dark-violent: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dd-violent: hsl(271, 36%, 24%);
+    --dark-grayish-violent: hsl(270, 7%, 64%);
+
+    /* gradient colors */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* secondary colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+
+    --recieved-chat: hsl(272, 40%, 93%);
+
+    /* typography */
+    --fs-regular: 16px;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+html {
+    font-size: 63.4%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: var(--light-grayish-violet);
+    max-height: 100svh;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 10rem;
+}
+
+.phone {
+    border: 10px solid var(--white);
+    border-radius: 25px;
+    min-width: 289px;
+    max-width: 320px;
+    height: 590px;
+    background: var(--light-grayish-violet);
+}
+
+.phone_speaker {
+    background: var(--white);
+    width: 170px;
+    margin-left: 70px;
+    margin-top: -2px;
+    position: absolute;
+    height: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.phone .message_header {
+    background: linear-gradient(to right, var(--light-magenta) ,var(--light-violet));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.6rem;
+    padding-bottom: .9rem;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.message_header .avatar_img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--white);
+}
+
+.message_header .left_block {
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+}
+
+.left_block .avatar_name h4 {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.left_block .avatar_name small {
+    color: var(--grayish-blue);
+    font-size: 1.2rem;
+}
+
+.message_header .menu_icon {
+    display: flex;
+    flex-direction: column;
+}
+
+/* message area */
+.message_area {
+    padding: .6rem;
+    font-size: var(--fs-regular);
+}
+
+.message_area .recieved_message {
+    width: 60%;
+    padding: .2rem;
+    background-color: var(--recieved-chat);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.recieved_message {
+    margin-top: .5rem;
+}
+
+.recieved_message p {
+    padding: .5rem;
+    font-size: 13px;
+    color: var(--moderate-violent);
+}
+
+/* sent message */
+.sent_message {
+    margin-top: .5rem;
+    position: relative;
+    left: 40%;
+    width: 60%;
+    background: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sent_message p {
+    padding: .5rem;
+    font-size: 13px;
+}
+
+.sent_img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-top: .8rem;
+}
+
+.dog_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.short {
+    width: 40%;
+    margin-left: 19%;
+}
+
+/* price */
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(345deg, var(--light-magenta), var(--light-violet));
+    height: 40px;
+    width: 80%;
+    margin-top: .8rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.price_content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.price_content .input {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: 2px solid var(--very-light-magenta);
+}
+
+.price_content p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+
+
+.price .price_tag {
+    color: var(--white);
+    font-weight: var(--fw-500);
+    padding-right: .9rem;
+}
+
+/* input area */
+.input_area {
+    display: flex;
+    background: var(--white);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+    margin-top: .8rem;
+}
+
+.input_area input {
+    border: none;
+    margin-left: .8rem;
+    padding: .8rem;
+}
+
+.input_area input::placeholder {
+    color: var(--grayish-blue);
+}
+
+
+.input_area .send_btn {
+    background: var(--very-dd-violent);
+    margin-right: .8rem;
+    border-radius: 50%;
+    height: 40px; width: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end of phone */
+
+/* main text */
+.main_text {
+    max-width: 435px;
+}
+
+.main_text .main_heading {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--very-dd-violent);
+    font-weight: var(--fw-500);
+}
+
+.main_text .main_sub_text {
+    line-height: 2.5rem;
+    color: var(--dark-grayish-violent);
+    font-size: 1.5rem;
+}
+/* end of main text */
+
+/* background  */
+.background_component {
+    position: absolute;
+    width: 30%;
+    height: 600px;
+    z-index: -1;
+}
+
+.banner1 {
+    border-radius: 0 0 30rem 30rem;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, var(--light-violet), var(--light-magenta));
+}
+
+.banner2 {
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 30rem;
+    background: linear-gradient(345deg, hsl(264, 33%, 97%), hsl(290, 38%, 97%));
+}
+
+
+
+/* media query */
+@media(max-width: 35em) {
+    .content {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 7rem;
+    }
+
+    .main_text {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .background_component {
+        width: 50%;
+    }
+
+    .banner2 {
+        top: 70%;
+    }
+}
